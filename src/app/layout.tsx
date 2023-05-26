@@ -34,7 +34,7 @@ export default async function RootLayout({
             </Link>
             <SignedIn>
               <div className="flex gap-4 items-center">
-                <span className="text-blue-400">{user.firstName}</span>
+                <span className="text-blue-400">{user && user.firstName}</span>
                 <UserButton afterSignOutUrl="/" />
               </div>
             </SignedIn>
